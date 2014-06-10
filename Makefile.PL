@@ -20,16 +20,17 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Sensu::API::Client",
   "PREREQ_PM" => {
-    "HTTP::Tiny" => "0.34",
+    "HTTP::Tiny" => "0.034",
     "JSON" => 0,
     "Moo" => 0,
+    "Try::Tiny" => 0,
     "namespace::clean" => 0
   },
   "TEST_REQUIRES" => {
     "Test::Exception" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -37,11 +38,12 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "HTTP::Tiny" => "0.34",
+  "HTTP::Tiny" => "0.034",
   "JSON" => 0,
   "Moo" => 0,
   "Test::Exception" => 0,
   "Test::More" => 0,
+  "Try::Tiny" => 0,
   "namespace::clean" => 0
 );
 

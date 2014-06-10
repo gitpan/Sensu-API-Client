@@ -1,6 +1,6 @@
 package Sensu::API::Client;
 # ABSTRACT: Perl client for the Sensu API
-$Sensu::API::Client::VERSION = '0.01';
+$Sensu::API::Client::VERSION = '0.02';
 use 5.010;
 use JSON;
 use Carp;
@@ -31,7 +31,7 @@ sub event {
 
 sub resolve {
     my ($self, $client, $check) = @_;
-    die "client and check required" unless ($client and $check);
+    croak "Client and check required" unless ($client and $check);
     return $self->post('/resolve', { client => $client, check => $check });
 }
 
@@ -41,7 +41,7 @@ sub info {
 
 sub stash {
     my ($self, $path) = @_;
-    die 'Path required' unless $path;
+    croak 'Path required' unless $path;
     return $self->get('/stashes/' . $path);
 }
 

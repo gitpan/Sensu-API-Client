@@ -1,5 +1,5 @@
 package Sensu::API::Client::APICaller;
-$Sensu::API::Client::APICaller::VERSION = '0.01';
+$Sensu::API::Client::APICaller::VERSION = '0.02';
 use 5.010;
 use Moo::Role;
 

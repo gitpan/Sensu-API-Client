@@ -15,11 +15,13 @@ meta-spec:
   version: '1.4'
 name: Sensu-API-Client
 requires:
-  HTTP::Tiny: '0.34'
+  HTTP::Tiny: '0.034'
   JSON: '0'
   Moo: '0'
+  Try::Tiny: '0'
   namespace::clean: '0'
 resources:
   bugtracker: https://github.com/miquelruiz/Sensu-API-Client/issues
+  homepage: http://metacpan.org/release/Sensu-API-Client/
   repository: git://github.com/miquelruiz/Sensu-API-Client.git
-version: '0.01'
+version: '0.02'
